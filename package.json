@@ -22,7 +22,7 @@
     "typescript": "^4.5.4"
   },
   "scripts": {
-    "test": "jest ",
+    "test": "jest --passWithNoTests --watch",
     "test:staged": "jest --coverage"
   }
 }
