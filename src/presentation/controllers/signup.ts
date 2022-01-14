@@ -3,7 +3,7 @@ import { MissingParamError } from '../errors/missing-param-error'
 import { badRequest } from '../helpers/http-helper'
 export class SignUpController {
   handle (httpRequest: HttpRequest): HttpResponse {
-    const requiredFiles = ['name', 'email']
+    const requiredFiles = ['name', 'email', 'password']
 
     for (const field of requiredFiles) {
       if (!httpRequest.body[field]) {
